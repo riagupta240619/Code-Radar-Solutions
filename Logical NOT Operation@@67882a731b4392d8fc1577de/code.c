@@ -4,6 +4,9 @@ int main() {
     if(a>!0){
         printf("True");
     }
+    elseif(a<0){
+        printf("True")
+    }
     else{
         printf("False");
     }
