@@ -13,6 +13,10 @@ int main(){
         printf("%d", a*b);
     }
     else{
-        printf("%d", a/b);
+        if (b == 0) {
+            printf("Error: Division by zero\n");
+        } else {
+            printf("%d\n", a / b);
+        }
     }
 }
