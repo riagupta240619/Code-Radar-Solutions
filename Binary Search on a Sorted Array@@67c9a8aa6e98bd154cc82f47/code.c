@@ -1,3 +1,1 @@
 // Your code here...
-void binarySearch(int n){
-}
