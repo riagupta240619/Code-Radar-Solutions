@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char str[100];
-    scanf("%d", &str);
+    scanf("%s", &str);
     int v = 0;
     for (int i = 0; str[i] != '\0'; i++){
         if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
