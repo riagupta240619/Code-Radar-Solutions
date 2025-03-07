@@ -8,6 +8,6 @@ int main(){
             words++;
         }
     }
-    printf("Words = %d\n", words + 1);
+    printf("%d\n", words + 1);
     return 0;
 }
