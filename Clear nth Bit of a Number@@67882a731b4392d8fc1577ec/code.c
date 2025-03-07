@@ -2,6 +2,6 @@
 int main(){
     int a,b;
     scanf("%d %d", &a, &b);
-    int bit = (a >> b) & 1;
-    printf("%d\n", a-bit);
+    a = a &~(1<<b);
+    printf("%d", &a)
 }
