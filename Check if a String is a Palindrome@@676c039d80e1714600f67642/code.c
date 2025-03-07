@@ -5,6 +5,7 @@ int main(){
     int len = 0;
     char reversed_string[100];
     while (str[len] != '\0') len++;
+    int j = 0;
     for (int i = len - 1; i>=0; i--){
         reversed_string[j] = str[i];
     }
