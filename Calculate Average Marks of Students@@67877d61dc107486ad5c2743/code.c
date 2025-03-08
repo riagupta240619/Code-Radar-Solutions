@@ -13,6 +13,6 @@ int main(){
         sum = sum +c;
     }
     avg = sum/n;
-    printf("Average Marks: %f", avg);
+    printf("Average Marks: %.2f", avg);
     return 0;
 }
