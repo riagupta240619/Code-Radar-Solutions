@@ -8,7 +8,7 @@ int isPrime(int num){
             return 0;
         }
     }
-    return ;
+    return 1;
 }
 int main(){
     int t;
