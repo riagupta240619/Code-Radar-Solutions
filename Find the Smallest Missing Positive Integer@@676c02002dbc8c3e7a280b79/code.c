@@ -46,7 +46,7 @@ int main(){
             }
             // printf("%d %d \n",e,i);
             if ((e == 0) & (i>0)) {
-                printf(" %d",i);
+                printf("%d",i);
             }
         }
     }
