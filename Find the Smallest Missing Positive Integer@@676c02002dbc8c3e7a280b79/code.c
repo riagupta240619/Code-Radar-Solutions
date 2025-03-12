@@ -47,6 +47,7 @@ int main(){
             }
             if ((e == 0) & (i>0)) {
                 printf("%d",i);
+                f++;
             }
         }
         if(f == 0) {
