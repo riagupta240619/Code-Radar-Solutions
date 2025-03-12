@@ -37,6 +37,7 @@ int main(){
     } else {
         int maxx = max(myarray,a);
         int minn = min(myarray,a);
+        int f = 0;
         for(int i = minn;i<=maxx;i++) {
             int e = 0;
             for(int j = 0;j<a;j++) {
