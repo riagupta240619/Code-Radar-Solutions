@@ -52,6 +52,7 @@ int main(){
             }
             f = f+e;
         }
+        printf("%d",f);
         if(a == f) {
             printf("%d",(myarray[0])+1);
         }
