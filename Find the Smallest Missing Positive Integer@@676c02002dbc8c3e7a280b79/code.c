@@ -40,7 +40,7 @@ int main(){
         for(int j = 0;j<a;j++) {
             int e = 0;
             for(int i = minn;i<=maxx;i++) {
-                if((myarray[j] == i) && ,(myarr[j] >0)) {
+                if((myarray[j] == i) && ,(myarray[j] >0)) {
                     e++ ;
                 }
             }
