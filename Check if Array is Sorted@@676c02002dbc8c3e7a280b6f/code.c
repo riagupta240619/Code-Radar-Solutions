@@ -2,6 +2,6 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int lst[n]:
-    
+    int lst[n];
+
 }
