@@ -44,7 +44,7 @@ int main(){
                     e++ ;
                 }
             }
-            printf("%d \n",e);
+            printf("%d %d \n",e,myarr[j]);
             if(e == 0) {
                 printf("%d",j);
             }
