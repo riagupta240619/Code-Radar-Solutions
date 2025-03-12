@@ -44,10 +44,10 @@ int main(){
                     e++ ;
                 }
             }
-            printf("%d %d \n",e,i);
-            // if ((e == 0) & (i>0)) {
-            //     printf(" %d",e);
-            // }
+            // printf("%d %d \n",e,i);
+            if ((e == 0) & (i>0)) {
+                printf(" %d",e);
+            }
         }
     }
 }
