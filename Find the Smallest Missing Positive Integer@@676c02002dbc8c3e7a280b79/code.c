@@ -37,15 +37,15 @@ int main(){
     } else {
         int maxx = max(myarray,a);
         int minn = min(myarray,a);
-        for(int j = 0;j<a;j++) {
+        for(int i = minn;i<=maxx;i++) {
             int e = 0;
-            for(int i = minn;i<=maxx;i++) {
+            for(int j = 0;j<a;j++) {
                 if((myarray[j] == i) && (myarray[j] >0)) {
                     e++ ;
                 }
             }
-            printf("%d %d \n",e,myarray[j]);
-            if ((e == 0) & (myarray[j]>0)) {
+            printf("%d %d \n",e,i);
+            if ((e == 0) & (i>0)) {
                 printf(" %d",j);
             }
         }
