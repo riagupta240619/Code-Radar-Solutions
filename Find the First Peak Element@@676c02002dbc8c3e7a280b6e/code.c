@@ -1,15 +1,17 @@
 #include<stdio.h>
 int main(){
-    int n;
-    lst[n];
+    int n;    
     scanf("%d", &n);
+    lst[n];
     for (int i = 0; i<n; i++){
         scanf("%d", &lst[i]);
     }
-    if (lst[i]>lst[i-1] && lst[i]>lst[i+1]){
-        printf("%d", lst[i]);
+    for (int i = 1; i<n-1;i++){
+        if (lst[i]>lst[i-1] && lst[i]>lst[i+1]){
+            printf("%d", lst[i]);
+            return 0;
+        }
     }
-    else{
-        printf("-1");
-    }
+    printf("-1");
+    return 0;
 }
