@@ -3,7 +3,7 @@ int main(){
     int n;    
     scanf("%d", &n);
     int lst[n];
-    for (int i = 0; i<n; i++){
+    for (int i = 0; i<n+1; i++){
         scanf("%d", &lst[i]);
     }
     for (int i = 1; i<n;i++){
