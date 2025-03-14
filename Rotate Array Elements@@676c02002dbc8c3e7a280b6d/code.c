@@ -13,6 +13,6 @@ int main(){
         lst2[(i+a)%n] = lst[i];
     }
     for (int i = 0;i <n; i++){
-        printf("%d", lst[i]);
+        printf("%d\n", lst2[i]);
     }
 }
