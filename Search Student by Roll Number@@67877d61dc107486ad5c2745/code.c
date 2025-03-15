@@ -1,23 +1,30 @@
 #include<stdio.h>
+#include<string.h>
+struct Student{
+    int no;
+    char name[50];
+    float marks;
+};
 int main(){
-    int n;
-    scanf("%d", &n);
-    int a;
-    char b[100];
-    float c;
-    int arr[100];
-    float sum, avg;
-    int x;
+    int a, roll2;
+    scanf("%d", &a);
+    struct Student st[a];
+    for (int i = 0; i<a; i++){
+        scanf("%d %s %f",&st[i].no, &st[i].name, &st[i].marks);
+    }
+    scanf("%d", &roll2)
+    int x = 0
     for (int i = 0; i<n; i++){
-        scanf("%d %s %f", &a,&b, &c);
-        arr[i] = a;
+        if (st[i].no == roll2){
+            printf("Roll Number: %d, Name: %s, Marks: %.2f\n", st[i].no, st[i].name, st[i].marks);
+            x = 1;
+            break;
+        }
     }
-    scanf("%d", &x);
-    if (arr[i] == x){
-        printf("Roll Number: %d, Name: %s, Marks: %f", x, b, c);
-    }
-    else{
+    if (!x){
         printf("Student not found");
     }
+    return 0;
+
     return 0;
 }
