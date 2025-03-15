@@ -13,8 +13,8 @@ int main(){
         scanf("%d %s %f",&st[i].no, &st[i].name, &st[i].marks);
     }
     scanf("%d", &roll2);
-    int x = 0
-    for (int i = 0; i<n; i++){
+    int x = 0;
+    for (int i = 0; i<a; i++){
         if (st[i].no == roll2){
             printf("Roll Number: %d, Name: %s, Marks: %.2f\n", st[i].no, st[i].name, st[i].marks);
             x = 1;
