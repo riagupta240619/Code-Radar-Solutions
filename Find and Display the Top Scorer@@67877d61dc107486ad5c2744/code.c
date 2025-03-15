@@ -8,9 +8,9 @@ struct Student{
 int main(){
     int a;
     scanf("%d", &a);
-    struct Student st[n];
+    struct Student st[a];
     struct topper;
-    for (int i = 0; i<n; i++){
+    for (int i = 0; i<a; i++){
         scanf("%d %s %f",&st[i].no, &st[i].name, &st[i].marks);
         if (i == 0 || st[i].marks > topper.marks){
             topper = st[i]
