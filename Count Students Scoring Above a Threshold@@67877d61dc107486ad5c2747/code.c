@@ -13,7 +13,7 @@ int main(){
     for (int i = 0; i<a; i++){
         scanf("%d %s %f",&st[i].no, &st[i].name, &st[i].marks);
     }
-    scanf("%d", &marks2);
+    scanf("%f", &marks2);
     int x = 0;
     for (int i = 0; i<a; i++){
         if (st[i].marks > marks2){
