@@ -20,6 +20,6 @@ int main(){
             count++;
         }
     }
-    printf("Count of students scoring abbove %f: %d", marks2, count);
+    printf("Count of students scoring above %.2f: %d", marks2, count);
     return 0;
 }
