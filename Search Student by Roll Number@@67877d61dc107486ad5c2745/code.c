@@ -12,7 +12,7 @@ int main(){
     for (int i = 0; i<a; i++){
         scanf("%d %s %f",&st[i].no, &st[i].name, &st[i].marks);
     }
-    scanf("%d", &roll2)
+    scanf("%d", &roll2);
     int x = 0
     for (int i = 0; i<n; i++){
         if (st[i].no == roll2){
