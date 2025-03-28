@@ -4,7 +4,7 @@ int fibonacciSeries(int n){
         printf("0");
     }
     else{
-        printf("%d", fibonacciSeries(n-1) + fibonacciSeries(n-2));
+        printf("%d ", fibonacciSeries(n-1) + fibonacciSeries(n-2));
     }
     return 0;
 }
