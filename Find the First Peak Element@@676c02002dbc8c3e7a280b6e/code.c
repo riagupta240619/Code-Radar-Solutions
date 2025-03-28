@@ -12,10 +12,6 @@ int main(){
             return 0;
         }
     }
-    if (lst[n - 1] > lst[n - 2]) {
-        printf("%d\n", lst[n - 1]);
-        return 0;
-    }
     printf("-1");
     return 0;
 }
