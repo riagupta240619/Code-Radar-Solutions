@@ -19,6 +19,6 @@ int main(){
     for(int i = 0; i<n; i++){
         scanf("%d", &lst[i]);
     }
-    bubble_sort(lst);
+    bubble_sort(lst,n);
     return 0;
 }
