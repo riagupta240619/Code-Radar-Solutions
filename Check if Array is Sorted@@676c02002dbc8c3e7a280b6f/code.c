@@ -1,4 +1,17 @@
 #include<stdio.h>
+int bubble_sort(int arr[], int n){
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<n;j++){
+            if(arr[i]<arr[i+1]){
+                printf("Sorted");
+            }
+            else{
+                printf("Not Sorted");
+            }
+        }
+    }
+    return 0;
+}
 int main(){
     int n;
     scanf("%d",&n);
@@ -6,18 +19,6 @@ int main(){
     for(int i = 0; i<n; i++){
         scanf("%d", &lst[i]);
     }
-    int sorted = 1;
-    for (int i = 1; i<n; i++){
-        if (lst[i]<lst[i-1]){
-            sorted = 0;
-            break;
-        }
-    }
-    if (sorted){
-        printf("Sorted");
-    }
-    else{
-        printf("Not Sorted");
-    }
+    bubble_sort(lst);
     return 0;
 }
