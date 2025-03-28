@@ -1,10 +1,12 @@
 #include<stdio.h>
-int fibonacciSeries(int n){
-    if(n == 0 || n == 1){
-        printf("0");
+void fibonacciSeries(int n){
+    int a = 0;
+    int b = 1;
+    int c;
+    for(int i = 0; i<n; i++){
+        printf("%d\n", a);
+        c = a+b;
+        a = b;
+        b = c;
     }
-    else{
-        printf("%d ", fibonacciSeries(n-1) + fibonacciSeries(n-2));
-    }
-    return 0;
 }
