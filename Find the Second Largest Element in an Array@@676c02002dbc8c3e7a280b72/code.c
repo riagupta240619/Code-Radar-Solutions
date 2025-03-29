@@ -2,6 +2,7 @@
 void bubble_sort(int arr[], int n){
     if (n <= 1) {
         printf("-1");
+        return;
     }
     for(int i = 0; i<n; i++){
         for(int j = i+1; j<n; j++){
