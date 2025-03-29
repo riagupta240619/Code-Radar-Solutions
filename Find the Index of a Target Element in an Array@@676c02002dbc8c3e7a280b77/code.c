@@ -10,10 +10,10 @@ int main(){
     scanf("%d", &k);
     for(int i = 0;i<n;i++){
         if(k == arr[i]){
-            return i;
+            printf("%d", i);
         }
         else{
-            return -1;
+            printf("-1");
         }
     }
     return 0;
