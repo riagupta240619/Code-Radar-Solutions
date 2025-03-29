@@ -2,7 +2,7 @@
 #include<string.h>
 #include<ctype.h>
 void caesarCipher(char msg[100], int n, char enc[100]){
-    for(int i = 0;i<strlen(msg);i++){
+    for(int i = 0;msg[i] != '\0';i++){
         char ch = msg[i];
         if(isalpha(ch)){
             char base = isupper ? 'A' : 'a';
