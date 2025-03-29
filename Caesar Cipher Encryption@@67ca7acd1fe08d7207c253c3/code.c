@@ -5,12 +5,12 @@ void caesarCipher(char msg[100], int n, char enc[100]){
     for(int i = 0;msg[i] != '\0';i++){
         char ch = msg[i];
         if(isalpha(ch)){
-            char base = isupper ? 'A' : 'a';
-            enc[i] = (ch - base + n);
+            char base = isupper(ch) ? 'A' : 'a';
+            enc[i] = (ch - base + n)%26 + base;
         }
         else{
             enc[i] = ch;
         }
     }
-    enc[strlen(msg)] = '\0';
+    enc[i] = '\0';
 }
