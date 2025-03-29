@@ -12,6 +12,9 @@ int main(){
         if(k == arr[i]){
             return i;
         }
+        else{
+            return -1;
+        }
     }
     return 0;
 }
