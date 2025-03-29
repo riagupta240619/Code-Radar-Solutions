@@ -1,6 +1,5 @@
 #include<stdio.h>
 int bubble_sort(int arr[], int n){
-    if (n <2) return -1;
     for(int i = 0; i<n; i++){
         for(int j = i+1; j<n; j++){
             if(arr[i] > arr[j]){
@@ -11,7 +10,9 @@ int bubble_sort(int arr[], int n){
         }
     }
     printf("%d", arr[n-2]);
-    return 0;
+    else{
+        return -1;
+    }
 }
 int main(){
     int n;
