@@ -4,7 +4,7 @@ int binarySearch(int arr[], int n, int target){
         if(arr[i] == target){
             return i;
         }
-        else if (arr[i] == arr[i+1] == targret){
+        else if (arr[i] == arr[i+1] == target){
             return n/2;
         }
     }
