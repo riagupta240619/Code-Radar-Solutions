@@ -10,7 +10,8 @@ int bubble_sort(int arr[], int n){
             }
         }
     }
-    return arr[n-2];
+    printf("%d", arr[n-2]);
+    return 0;
 }
 int main(){
     int n;
