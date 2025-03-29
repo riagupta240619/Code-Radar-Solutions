@@ -1,6 +1,6 @@
 #include<stdio.h>
 int bubble_sort(int arr[], int n){
-    if (n = 1) return -1;
+    if (n <= 1) return -1;
     for(int i = 0; i<n; i++){
         for(int j = i+1; j<n; j++){
             if(arr[i] > arr[j]){
