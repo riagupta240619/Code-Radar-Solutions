@@ -11,7 +11,7 @@ void bubble_sort(int arr[], int n){
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
-            if(arr[i] = arr[j]){
+            else if(arr[i] = arr[j]){
                 printf("-1");
                 return;
             }
