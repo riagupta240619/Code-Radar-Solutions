@@ -21,7 +21,7 @@ void bubble_sort(int arr[], int n){
             }
         }
     }
-    if(arr[n-2] == arr[n-1]){
+    if(arr[n-2] == arr[n-1] && arr[n-2] == arr[n-3]){
         printf("-1");
         return;
     }
