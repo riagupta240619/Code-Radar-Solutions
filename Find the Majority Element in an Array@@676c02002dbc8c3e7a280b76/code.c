@@ -17,7 +17,7 @@ void frequency(int arr[], int n, int arr1[]) {
                 visited[j] = 1;
             }
         }
-        arr1[i] = count;
+        arr1[i] = arr[i];
     }
 }
 void bubble_Sort(int arr1[], int n) {
