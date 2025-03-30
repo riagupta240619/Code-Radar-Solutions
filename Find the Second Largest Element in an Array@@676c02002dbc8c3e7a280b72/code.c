@@ -22,7 +22,8 @@ void bubble_sort(int arr[], int n){
         }
     }
     if(arr[n-2] == arr[n]){
-        return -1;
+        printf("-1");
+        return;
     }
     printf("%d", arr[n-2]);
     
