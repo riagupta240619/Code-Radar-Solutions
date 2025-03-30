@@ -9,7 +9,7 @@ void rotate(int arr[], int n, int k){
         arr[i] = lst[i];
     }
     for(int i= 0; i<n; i++){
-        printf("%d", lst[i]);
+        printf("%d ", lst[i]);
     }
     printf("\n");
 }
