@@ -1,9 +1,6 @@
 #include<stdio.h>
 void frequency(int arr[], int n){
     int visited[n];
-    for (int i = 0; i < n; i++) {
-        visited[i] = 0;
-    }
     for(int i =0; i<n;i++){
         if(visited[i] == 1){
             continue;
@@ -15,7 +12,7 @@ void frequency(int arr[], int n){
                 visited[j] = 1;
             }
         }
-        printf("%d %d", arr[i], count);
+        printf("%d %d\n", arr[i], count);
     }
 }
 int main(){
