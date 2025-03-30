@@ -1,7 +1,10 @@
 #include<stdio.h>
 void frequency(int arr[], int n){
     int visited[n];
-    int arr1[];
+    for (int i = 0; i < n; i++) {
+        visited[i] = 0;
+        arr1[i] = 0; 
+    }
     for(int i =0; i<n; i++){
         if (visited[i] == 1){
             continue;
@@ -36,5 +39,6 @@ int main(){
     }
     frequency(arr, n);
     bubble_Sort(arr1, n);
+    printf("%d", arr1[n-1]);
     return 0;
 }
