@@ -1,6 +1,17 @@
 #include<stdio.h>
-void rotate(int arr[], int n){
-    
+void rotate(int arr[], int n, int k){
+    int lst[n];
+    k = k%n;
+    for(int i= 0; i<n; i++){
+        lst[i] = arr([i+k]%n);
+    }
+    for(int i= 0; i<n; i++){
+        arr[i] = lst[i];
+    }
+    for(int i= 0; i<n; i++){
+        printf("%d", lst[i]);
+    }
+    printf("\n");
 }
 int main(){
     int n;
@@ -9,6 +20,8 @@ int main(){
     for(int i =0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-    rotate(arr,n);
+    int k;
+    scanf("%d", &k);
+    rotate(arr,n, k);
     return 0;
 }
