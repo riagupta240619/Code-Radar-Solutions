@@ -13,18 +13,6 @@ void bubble_sort(int arr[], int n){
             }
         }
     }
-    for(int i = 0; i<n; i++){
-        for(int j = i+1; j<n;j++){
-            if(arr[i] == arr[j] || arr[i] == arr[n-1]){
-                printf("-1");
-                return;
-            }
-        }
-    }
-    if(arr[n-2] == arr[n-1] && arr[n-2] == arr[n-3]){
-        printf("-1");
-        return;
-    }
     printf("%d", arr[n-2]);
     
 }
