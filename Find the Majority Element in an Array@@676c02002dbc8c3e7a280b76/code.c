@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void frequency(int arr[], int n, int arr1[]) {
+int frequency(int arr[], int n, int arr1[]) {
     int visited[n];
     for (int i = 0; i < n; i++) {
         visited[i] = 0;
@@ -18,6 +18,7 @@ void frequency(int arr[], int n, int arr1[]) {
         }
         arr1[i] = arr[i];
     }
+    return -1;
 }
 void bubble_Sort(int arr1[], int n) {
     for (int i = 0; i < n ; i++) {
