@@ -4,6 +4,7 @@ void frequency(int arr[], int n, int arr1[]) {
     int visited[n];
     for (int i = 0; i < n; i++) {
         visited[i] = 0;
+        arr1[i] = 0;
     }
     for (int i = 0; i < n; i++) {
         if (visited[i] == 1) {
@@ -19,16 +20,14 @@ void frequency(int arr[], int n, int arr1[]) {
         arr1[i] = count;
     }
 }
-void bubble_Sort(int arr1[], int n) {
-    for (int i = 0; i < n ; i++) {
-        for (int j = i+1; j < n ; j++) {
-            if (arr1[i] > arr1[j]) {
-                int temp = arr1[i];
-                arr1[i] = arr1[j];
-                arr1[j] = temp;
-            }
+int find_max(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
         }
     }
+    return max;
 }
 int main() {
     int n;
@@ -38,7 +37,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     frequency(arr, n, arr1);
-    bubble_Sort(arr1, n);
-    printf("%d\n", arr1[n - 1]);
+    int max_freq = find_max(arr1, n);
+    printf("%d\n", max_freq);
     return 0;
 }
